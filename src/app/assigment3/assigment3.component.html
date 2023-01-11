@@ -1,0 +1,17 @@
+<p>assigment3 works!</p>
+<h2>two way data_binding</h2>
+quarter
+<select [(ngModel)]="quarter" (change)="quarterChange()">
+
+    <option  *ngFor="let quarter of quarters" value="{{quarter}}">{{quarter}}</option>
+
+</select>
+month
+<select [(ngModel)]="month" (change)="quarterChange()">
+
+    <option  *ngFor="let month of months" value="{{month}}">{{month}}</option>
+</select>
+
+
+<hr />
+selected {{quarter}} - {{month}}
